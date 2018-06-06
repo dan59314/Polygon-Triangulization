@@ -88,6 +88,7 @@ BackId = n;
 while (BackId-ForeId>1) {
 
   GetTriangle( ForeId, BackId, ForeId+1);
+  GetTriangle( BackId, ForeId+1, BackId-1);
 
   ForeId++;
 
