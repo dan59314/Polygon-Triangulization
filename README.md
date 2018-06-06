@@ -66,17 +66,17 @@ I then try to think how to do the polygon triangulation in my own concept. Here 
 
 Step 1: Find all concave points in a polygon.
 
-1<img src="https://github.com/dan59314/Polygon-Triangulization/blob/master/plg02.PNG" width="480">
+<img src="https://github.com/dan59314/Polygon-Triangulization/blob/master/plg02.PNG" width="480">
 
 
 Step 2 : Connect all unused concave points to the near points to split one polygon into several ones.
 
-2<img src="https://github.com/dan59314/Polygon-Triangulization/blob/master/Plg03.PNG" width="480">
+<img src="https://github.com/dan59314/Polygon-Triangulization/blob/master/Plg03.PNG" width="480">
 
 
 Step 3: Repeat step1 and step2 for all the split polygons until there is no more concave points.
 
-3<img src="https://github.com/dan59314/Polygon-Triangulization/blob/master/plg04.PNG" width="480">
+<img src="https://github.com/dan59314/Polygon-Triangulization/blob/master/plg04.PNG" width="480">
 
 
 Step 4 : Start do triangulation for each convex polygon. Let's say there is a n-points convex polygon. Start from 1st point, then point-n, point-2nd......,  (1,n,2),(n,2,n-1),(2,n-1,3)......
@@ -95,12 +95,12 @@ while (BackId-ForeId>1) {
 
 }
 
-4<img src="https://github.com/dan59314/Polygon-Triangulization/blob/master/plg05.PNG" width="480">
+<img src="https://github.com/dan59314/Polygon-Triangulization/blob/master/plg05.PNG" width="480">
 
 
 I then finally convert the non-convex polygon into many triangles.
 
-5<img src="https://github.com/dan59314/Polygon-Triangulization/blob/master/Plg06.PNG" width="480">
+<img src="https://github.com/dan59314/Polygon-Triangulization/blob/master/Plg06.PNG" width="480">
 
 
 Quite easy, isn't it?
